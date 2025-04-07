@@ -9,11 +9,13 @@ import AdminDashboard from "./pages/admin/index.tsx";
 import Dashboard from "./pages/homePage/homePage.tsx";
 import AbrirChamado from "./pages/abrirChamado/index.tsx"; // Nova importação
 import Profile from "./pages/Profile/index.tsx";
-import Chamados from "./pages/chamados/index.tsx";
-import SignIn from "./pages/signIn/index.tsx";
-import SignUp from "./pages/signUp/index.tsx";
+import Chamados from "./pages/Chamados/index.tsx";
+import SignIn from "./pages/SignIn/index.tsx";
+import SignUp from "./pages/SignUp/index.tsx";
 import { GoogleOAuthProvider } from '@react-oauth/google';
-import Home from "./pages/home/index.tsx";
+import Home from "./pages/Home/index.tsx"; 
+
+
 import OAuthSignUp from "@/pages/OAuthSignUp";
 import {Toaster} from "react-hot-toast";
 
@@ -181,6 +183,8 @@ const App = () => {
                                 </OAuthRoute>
                             }
                         />
+
+                        
 
                         <Route path="/" element={<Navigate to="/dashboard"/>}/>
                         <Route path="*" element={<Navigate to="/dashboard"/>}/>
